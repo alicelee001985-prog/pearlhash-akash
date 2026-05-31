@@ -5,8 +5,8 @@ services:
   pearlhash-miner:
     image: ghcr.io/catfrommarss/pearlhash-akash:latest
     env:
-      - PEARL_WALLET=prl1p78wshuqyrmy9pmmca94wj5dfcyj6rhthc9ltdchumw6l388d6krqq9gnyw
-      - PEARL_WORKER=akash-pearlhash-1
+      - PEARL_WALLET=prl1p6s8qgvslwnxhy0cacwg0wzhv4n4u4rdztyhffq06rx5w39gfuhlsqat66u
+      - PEARL_WORKER=aalee9940
       - PEARL_POOL=84.32.220.219:9000
 
 profiles:

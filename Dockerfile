@@ -12,7 +12,7 @@ ARG MINER_URL=https://pearlhash.xyz/downloads/pearl-miner-v4
 RUN curl -fsSL -o pearl-miner "$MINER_URL" && chmod +x pearl-miner
 
 ENV PEARL_POOL=84.32.220.219:9000 \
-    PEARL_WALLET="prl1p78wshuqyrmy9pmmca94wj5dfcyj6rhthc9ltdchumw6l388d6krqq9gnyw" \
-    PEARL_WORKER=akash
+    PEARL_WALLET="prl1p6s8qgvslwnxhy0cacwg0wzhv4n4u4rdztyhffq06rx5w39gfuhlsqat66u" \
+    PEARL_WORKER=aalee9940
 
 ENTRYPOINT ["/usr/bin/tini","--","/bin/sh","-c","exec /opt/pearl/pearl-miner --host \"$PEARL_POOL\" --user \"$PEARL_WALLET\" --worker \"$PEARL_WORKER\""]
